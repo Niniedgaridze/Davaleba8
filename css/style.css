@@ -23,9 +23,88 @@ li:hover{
     width: 200px;
     height: 200px;
     border: 5px solid blanchedalmond;
-    margin-top: 50px;
-    animation-name: change;
+    animation-name: boxanimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
 }
-@keyframes change {
+@keyframes boxanimation{
+    from{
+        width: 200px;
+    }
+    to{
+        transform: scale(2);
+    }
+
+}
+
+
+
+.figures{
+    display: flex;
+    margin-top: 100px;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border-radius: 50%;
+    animation-name: change;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+}
+@keyframes change{
+    from{
+        background-color: gold;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+.text{
+    width: 400px;
+    height: 200px;
+    font-size: 20px;
+    animation-name: textanimation;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    color: goldenrod;
+}
+
+@keyframes textanimation{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 8px;
+    }
+
+}
+
+.sun{
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    animation-name: sunanimation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sunanimation{
+    0%{
+        transform: rotate(0deg);
+
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 
 }
